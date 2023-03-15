@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NHS Records</title>
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/clients.css">
+  </head>
+  <body>
+
+    <h1>NHS Records</h1>
+    
+    <div class="list">
+        <% for (let client of clientList) { %>
+            <div class="card">
+                <h3 class="name"> <%= client.name %> </h3>
+                <h3> Age : <%= client.age %> </h3>
+            </div>
+        <% } %>    
+    </div>
+    
+  </body>
+</html>
